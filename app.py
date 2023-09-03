@@ -7,7 +7,7 @@ import io
 
 
 def fetch_poster(movie_id):
-    url = 'https://api.themoviedb.org/3/movie/{}?api_key=6d4d76e7b24d5e2f0f9d1a4d71807c9d&language=en-US'.format(
+    url = 'https://api.themoviedb.org/3/movie/{}?api_key=<Your API Key>&language=en-US'.format(
         movie_id)
     data = requests.get(url)
     data = data.json()
